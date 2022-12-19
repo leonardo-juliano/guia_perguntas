@@ -1,0 +1,22 @@
+{
+  "name": "guia-das-perguntas",
+  "version": "1.0.0",
+  "description": "site de perguntas e respostas",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon index.js"
+  },
+  "author": "Leonardo Juliano",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "bootstrap": "^5.2.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.26.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
