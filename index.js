@@ -75,6 +75,16 @@ app.get("/pergunta/:id",(req, res)=> {
     
 });
 
+app.get("/pergunta/delete/:id", (req,res)=>{
+    Pergunta.destroy({
+        where: {'id': req.params.id}
+    }).then(()=>{
+        res.redirect("/");
+    }).catch((error)=>{
+        console.log(error)
+    })
+})
+
 app.post("/responder",(req,res) => {
     var corpo = req.body.corpo;
     var perguntaId = req.body.pergunta;

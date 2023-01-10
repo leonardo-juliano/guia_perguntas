@@ -10,10 +10,15 @@
         <div class="card">
             <div class="card-body">
                 <h3><%= pergunta.titulo %> </h3>
+                <input type="hidden" name="id" value="<%= pergunta.id %>">
             </div>
             <div class="card-footer">
                 <a href="/pergunta/<%=pergunta.id %>"><button class="btn btn-primary">Responder</button></a>
             </div>
+
+             <a href="/pergunta/delete/<%= pergunta.id %>"><button class="btn btn-danger">Deletar</button></a>
+
+
         </div>
         
     <% }) %>
